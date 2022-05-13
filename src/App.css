@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  display: flex-box;
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.Display{
+  text-align: right;
+  width: 100%;
+  display: flexbox;
+  justify-content: center;
+  background-color: rgb(55, 1, 82);
+  color: white;
+  font-size: larger;
+  height: 20%;
+  align-content: center;
+  border-radius: 5px 5px 0 0;
+}
+
+span{
+  padding: 10px;
+}
+
+.Operands{
+  display: flex;
+  flex: 1;
+  background-color: rgb(255, 21, 157);
+  width: 100%;
+}
+
+.Equals{
+  background-color: rgb(100, 4, 4);
+}
+
+
+.Operands > button{
+  padding: 10px;
+  width: 25%;
+  flex: 1 1 0%;
+  border: none;
+  background-color: rgb(255, 21, 157);
+  border-left:1px;
+  font-size: larger;
+}
+
+.Operands > button:hover{
+  transition-duration: 1s;
+    background-color: purple;
+    
+}
+
+.Digits {
+  width: 100%;
+  display: flexbox;
+  justify-content: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.Digits > button{
+  padding: 10px;
+  border: none;
+  width: 33.3333%;
+  background-color: rgb(55, 1, 82);
+  color: white;
+  font-size: larger;
+}
+
+.Digits > button:hover{
+  background-color: rgb(255, 21, 157);
+  transition-duration: 1s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation
+  : App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
